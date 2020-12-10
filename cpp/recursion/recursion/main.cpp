@@ -1,11 +1,19 @@
 ﻿// recursion.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
+#include "factorial.h"
+#include "fibonacci.h"
+#include "hanoi.h"
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << factorial(4) << endl;
+    cout << factorial_nonrecursion(4) << endl;
+    cout << fibonacci(8) << endl;
+    cout << fibonacci_nonrecursion(8) << endl;
+    hanoi(3, 'A', 'B', 'C');
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
